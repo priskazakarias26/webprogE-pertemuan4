@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <h1>Form Data Mahasiswa Instiki</h1>
+
+    <div class="container">
+    <form id = "formmhs" onsubmit="tampildata(even)">
+        <div class ="mb-3">
+            <label class="form-label">Nama Lengkap</label>
+            <input type="text" id="nama" class="form-control">
+
+        </div>
+
+        <div class ="mb-3">
+            <label class="form-label">NIM</label>
+            <input type="text" id="nim" class="form-control">
+
+        </div>
+
+        <div class ="mb-3">
+            <label class="form-label">PRODI</label>
+            <input type="text" id="prodi" class="form-control">
+
+        </div>
+
+        <button class="btn btn-primary">Kirim Data</button>
+
+    </form>
+
+    <div class="alert alert-success mt-4" role="alert">
+        <h3 class="alert-heading mb-3"> Data Berhasil di Kirim</h3>
+        <p class="mb-1">Nama:<span id="resNama"></span></p>
+        <p class="mb-1">PRODI:<span id="resPRODI"></span></p>
+    </div>
+    </div>
+
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    
+    
+  </body>
+</html>
